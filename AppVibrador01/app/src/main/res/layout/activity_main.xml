@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.androidmorefast.pc.appvibrador01.MainActivity">
+
+
+    <Button
+        android:text="Opcion 2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_brivate_once"
+        android:onClick="performVibrateOnce"
+        android:layout_alignTop="@+id/btn_brivate_repeat"
+        android:layout_alignLeft="@+id/btn_brivate_repeat"
+        android:layout_alignStart="@+id/btn_brivate_repeat"
+        android:layout_marginTop="64dp" />
+
+    <Button
+        android:text="Stop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_brivate_cancel"
+        android:onClick="performVibrateCancel"
+        android:layout_below="@+id/btn_brivate_once"
+        android:layout_alignLeft="@+id/btn_brivate_once"
+        android:layout_alignStart="@+id/btn_brivate_once"
+        android:layout_marginTop="24dp" />
+
+    <Button
+        android:text="Opcion 1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_brivate_repeat"
+        android:onClick="performVibrateRepeat"
+        android:layout_marginTop="35dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+    />
+</RelativeLayout>
